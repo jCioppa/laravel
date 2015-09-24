@@ -1,0 +1,13 @@
+{
+    "name": "Cioppa/simple-admin",
+    "description" : "a simple user app",
+    "license" : "UOttawa",
+    "authors": [
+        {
+            "name": "Josel Cioppa",
+            "email": "josel.cioppa@gmail.com"
+        }
+    ],
+    "minimum-stability" : "dev",
+    "require": {}
+}
