@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Http\Flash;
+
 class PagesController extends Controller
 {
     /**
@@ -15,7 +15,7 @@ class PagesController extends Controller
      */
     public function index()
     {
-	Flash::success('thanks', 'welcome home!');
+	\Flash::success('Thanks!', 'welcome home!');
    	return view('pages.home'); 
     }
 

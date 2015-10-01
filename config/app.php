@@ -135,17 +135,20 @@ return [
         Illuminate\Session\SessionServiceProvider::class,
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
-	Illuminate\View\ViewServiceProvider::class,
-	Illuminate\Html\HtmlServiceProvider::class,
+        Illuminate\View\ViewServiceProvider::class,
+        Illuminate\Html\HtmlServiceProvider::class,
 
         /*
          * Application Service Providers...
-         */
+	 */
+
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
-	App\Providers\RouteServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
+        Cioppa\JFlash\JFlashServiceProvider::class,
+        Cioppa\FormField\FormFieldServiceProvider::class, 
 
     ],
 
@@ -195,9 +198,14 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        'Form' => Illuminate\Html\FormFacade::class,
+        'Html' => Illuminate\Html\HtmlFacade::class,
 
-	'Form' => Illuminate\Html\FormFacade::class,
-	'Html' => Illuminate\Html\HtmlFacade::class,
-    ],
+        'Flash' => Cioppa\Facades\JFlash::class,	
+        'JFlash' => Cioppa\Facades\JFlash::class,
+        'FormField' => Cioppa\Facades\FormField::class,
+        
+
+],
 
 ];
